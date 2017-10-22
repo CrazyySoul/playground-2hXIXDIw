@@ -29,7 +29,9 @@ protected void setPrix(double prix)
 {
 	this.prix = prix;
 }
+```
 
+```java runnable
 // Méthode utilisée pour l'affichage d'un dessert.
 public String toString()
 {
@@ -47,7 +49,9 @@ public class Crepe extends Dessert {
             setPrix(1.50);
     }
 }
+```
 
+```java runnable
 public class Gaufre extends Dessert {
 	 // Constructeur qui intialise le libellé et le prix.
     public Gaufre()
@@ -56,7 +60,9 @@ public class Gaufre extends Dessert {
             setPrix(1.80);
     }
 }
+```
 
+```java runnable
 public abstract class DecorateurIngredient extends Dessert {
 	protected Dessert dessert;// Dessert sur leuquel on applique l'ingrédient.
     
@@ -65,7 +71,9 @@ public abstract class DecorateurIngredient extends Dessert {
     // On oblige les ingrédients à implémenter la méthode getPrix().
     public abstract double getPrix();
 }
+```
 
+```java runnable
 public class Chocolat extends DecorateurIngredient {
 
 	 // Constructeur qui prend en paramètre le dessert.
@@ -87,7 +95,9 @@ public class Chocolat extends DecorateurIngredient {
     }
 
 }
+```
 
+```java runnable
 public class Chantilly extends DecorateurIngredient {
 	// Constructeur qui prend en paramètre le dessert.
     public Chantilly(Dessert d)
@@ -108,7 +118,9 @@ public class Chantilly extends DecorateurIngredient {
     }
 
 }
+```
 
+```java runnable
 //Classe principale de l'application.
 public class Main
 {
@@ -130,10 +142,6 @@ public class Main
              System.out.println(d3);
      }
 }
-
-
-
-
 ```
 
 # Advanced usage
