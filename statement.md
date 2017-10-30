@@ -6,7 +6,7 @@ This Java template lets you get started quickly with a simple one-page playgroun
 import java.text.NumberFormat;
 
 //Classe abstraite dessert.
-public abstract class Dessert
+abstract class Dessert
 {
 private String libelle;// Libellé du dessert.
 private double prix;// Prix du dessert.
@@ -39,7 +39,7 @@ public String toString()
 }
 }
 
-public class Crepe extends Dessert {
+class Crepe extends Dessert {
 	// Constructeur qui initialise le libellé et le prix.
     public Crepe()
     {
@@ -48,7 +48,7 @@ public class Crepe extends Dessert {
     }
 }
 
-public class Gaufre extends Dessert {
+class Gaufre extends Dessert {
 	 // Constructeur qui intialise le libellé et le prix.
     public Gaufre()
     {
@@ -57,7 +57,7 @@ public class Gaufre extends Dessert {
     }
 }
 
-public abstract class DecorateurIngredient extends Dessert {
+abstract class DecorateurIngredient extends Dessert {
 	protected Dessert dessert;// Dessert sur leuquel on applique l'ingrédient.
     
     // On oblige les ingrédients à implémenter la méthode getLibelle().
@@ -66,7 +66,7 @@ public abstract class DecorateurIngredient extends Dessert {
     public abstract double getPrix();
 }
 
-public class Chocolat extends DecorateurIngredient {
+class Chocolat extends DecorateurIngredient {
 
 	 // Constructeur qui prend en paramètre le dessert.
     public Chocolat(Dessert d)
@@ -88,7 +88,7 @@ public class Chocolat extends DecorateurIngredient {
 
 }
 
-public class Chantilly extends DecorateurIngredient {
+class Chantilly extends DecorateurIngredient {
 	// Constructeur qui prend en paramètre le dessert.
     public Chantilly(Dessert d)
     {
