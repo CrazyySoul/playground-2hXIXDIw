@@ -11,7 +11,7 @@
 -[ ]Absolument aucune idée
 
 ![UML_DESSERT](uml2.PNG "")
-?[Les méthodes de a classe "ComposantConcret" sont-elle redefinies dans la classe "Decorateur" ?]
+?[Les méthodes de la classe "ComposantConcret" sont-elle redefinies dans la classe "Decorateur" ?]
 -[ ]Oui
 -[x]Non
 -[ ]Absolument aucune idée
