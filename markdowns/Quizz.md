@@ -1,4 +1,4 @@
-?[A quoi sert le design pattern Decorator ?]
+?[A quoi sert le design pattern Decorator ?](single)
 -[ ]Definir plusieurs méthodes interchangeables dynamiquement
 -[x]Ajouter dynamiquement des responsabilités supplémentaires à un objet
 -[x]A décorer
