@@ -1,4 +1,6 @@
 title: Simple Java Template
 plan:
-- title: Java Snippet
-  statement: statement.md
+- title: Design Pattern Decorator
+  statement: markdowns/statement.md
+- title : Quizz
+  statement: markdowns/Quizz.md
