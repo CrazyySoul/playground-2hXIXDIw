@@ -4,6 +4,6 @@
 -[ ]A décorer
 -[ ]Changer le comportement d'un objet sans changer son instanciation
 
-![UML_DESSERT](uml.png "")
+![UML_DESSERT](uml.PNG "")
 ?[Dans quel cas peut-on utiliser le design pattern Decorator ?]
 -[x]Ajouter des fonctionnalités à un objet sans redéfinir ses méthodes
