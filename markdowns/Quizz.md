@@ -10,8 +10,8 @@
 -[ ]Absolument aucune idée
 
 ?[S'il y a plusieurs Decorateur, peut-on les utilisés dans n'importe quelle ordre ?]
--[ ]Oui
--[x]Non
+-[x]Oui
+-[ ]Non
 -[ ]Absolument aucune idée
 
 ![UML_DESSERT](uml.PNG "")
