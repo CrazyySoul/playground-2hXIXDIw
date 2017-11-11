@@ -1,13 +1,12 @@
 ?[A quoi sert le design pattern Decorator ?]
 -[ ]Definir plusieurs méthodes interchangeables dynamiquement
--[x]Ajouter dynamiquement des responsabilités supplémentaires à un objet
+-[x]Ajouter dynamiquement des responsabilités à un objet
 -[ ]A décorer
 -[ ]Changer le comportement d'un objet sans changer son instanciation
 
-![UML_DESSERT](uml2.PNG "")
-?[La classe "ComposantConcret" a-t-elle accès aux méthodes de la classe "Decorateur" ?]
--[ ]Oui
--[x]Non
+?[Peut-on décorer un objet avec plusieurs Decorateurs ?]
+-[x]Oui
+-[ ]Non
 -[ ]Absolument aucune idée
 
 ![UML_DESSERT](uml2.PNG "")
