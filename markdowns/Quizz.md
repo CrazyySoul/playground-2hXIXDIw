@@ -9,8 +9,7 @@
 -[ ]Non
 -[ ]Absolument aucune idée
 
-![UML_DESSERT](uml2.PNG "")
-?[Les méthodes de la classe "ComposantConcret" sont-elle redefinies dans la classe "Decorateur" ?]
+?[Si il y a plusieurs Decorateur, peut-on les utilisés dans n'importe quelle ordre ?]
 -[ ]Oui
 -[x]Non
 -[ ]Absolument aucune idée
