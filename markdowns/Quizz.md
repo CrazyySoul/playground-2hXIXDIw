@@ -22,7 +22,7 @@
 -[ ]Non
 -[ ]Absolument aucune idée
 
-?[Parmi les 5 principes orientés objets, le design pattern decorator est-il une alternative ?]
+?[Parmi lequel des 5 principes orientés objets, le design pattern decorator en est-il une alternative ?]
 -[ ]Polymorphisme
 -[ ]Encapsulation
 -[ ]Abstraction
