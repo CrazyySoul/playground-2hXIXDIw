@@ -9,7 +9,7 @@
 -[ ]Non
 -[ ]Absolument aucune idée
 
-?[Si il y a plusieurs Decorateur, peut-on les utilisés dans n'importe quelle ordre ?]
+?[S'il y a plusieurs Decorateur, peut-on les utilisés dans n'importe quelle ordre ?]
 -[ ]Oui
 -[x]Non
 -[ ]Absolument aucune idée
