@@ -1,6 +1,10 @@
 title: Simple Java Template
 plan:
-- title: Design Pattern Decorator
-  statement: markdowns/statement.md
+- title: Problematique
+  statement: markdowns/problematique.md
+- title: Solution : Le design pattern Decorator
+  statement: markdowns/solution.md
+- title: Un exemple concret
+  statement: markdowns/exemple.md
 - title : Quizz
-  statement: markdowns/Quizz.md
+  statement: markdowns/quizz.md
