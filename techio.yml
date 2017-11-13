@@ -1,8 +1,8 @@
 title: Simple Java Template
 plan:
-- title: Problematique
+- title: Presentation
   statement: markdowns/problematique.md
-- title: Solution : Le design pattern Decorator
+- title: Le design pattern Decorator
   statement: markdowns/solution.md
 - title: Un exemple concret
   statement: markdowns/exemple.md
