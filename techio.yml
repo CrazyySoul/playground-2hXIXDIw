@@ -6,5 +6,7 @@ plan:
   statement: markdowns/solution.md
 - title: Un exemple concret
   statement: markdowns/exemple.md
+- title : Un exemple concret
+  statement : markdowns/ex.md
 - title : Quizz
   statement: markdowns/quizz.md
