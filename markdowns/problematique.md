@@ -1,6 +1,7 @@
 # Bonjour !
 
-Bienvenue sur notre tech.io ! Dans cette presentation nous allons vous parler du design pattern Decorator.
+Bienvenue sur notre tech.io ! Dans cette presentation nous allons vous parler du 
+**design pattern Decorator**
 
 # Problematique
 
