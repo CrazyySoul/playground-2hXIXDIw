@@ -22,27 +22,27 @@ public abstract class Voiture {
 
 # Deuxieme étape 
 
-Maintenant on crée la classe Corsa et la classe C2 qui correspond aux classes Composant Concret. Elle héritent de la classe voiture. Dans le constructeur de ces classes on met à jour les attributs défini dans Voiture à l’aide des accesseurs
+Maintenant on crée la classe Corsa et la classe C2 qui correspondent aux classes Composant Concret. Elles héritent de la classe voiture. Dans le constructeur de ces classes on définies leurs attributs à l’aide des mutateurs de leurs classe mère.
 ```java Runnable    
 class Corsa extends Voiture{
     	public Corsa() {
-    		setLibelle("Corsa"); 
-		setPrix(5000);
-		setPoids(1500);
+    	    setLibelle("Corsa"); 
+		    setPrix(5000);
+		    setPoids(1500);
     	}	
 }
     class C2 extends Voiture{
     	public C2() {
     		setLibelle("C2"); 
-		setPrix(4000);
-		setPoids(1000);
+		    setPrix(4000);
+		    setPoids(1000);
     	}		
 }
 ```
 
 # Troisième étape 
 
-A présent, on crée le Décorateur. Celui-ci possède une voiture en attribut et oblige la redéfinission de deux méthodes getLibelle() et getPrix().
+A présent, on crée le Décorateur. Celui-ci possède une voiture en attribut et on choisit les méthodes que l'on a redefinir. Ici, ce sera les méthodes : getLibelle(), getPrix(), getPoids().
 ```java Runnable
 abstract abstract class DecorateurVoiture extends Voiture{
 	protected Voiture voiture;
@@ -54,7 +54,7 @@ abstract abstract class DecorateurVoiture extends Voiture{
 ```
 # Quatrième étape
 
- On crée une classe pour chaque option que l'on souhaite aujouter. Chaque Option (ToitOuvrant, GPS, Régulateur...) doit hériter de la classe VoitureAvecOption.
+ On crée une classe pour chaque option que l'on souhaite aujouter. Chaque Option (ToitOuvrant, GPS, Régulateur...) doit hériter de la classe DecorateurVoiture et redéfinir ses méthodes.
 ```java Runnable
 class ToitOuvrant extends DecorateurVoiture{
 	public ToitOuvrant(Voiture v) { voiture = v);
@@ -77,7 +77,7 @@ class Regulateur extends DecorateurVoiture{
 ```
 # Cinquième étape 
 
-Maintenant on implément le main pour utiliser notre décorateur
+Maintenant on implémente le main pour utiliser notre décorateur
 ```java runnable
 // { autofold
 abstract class Voiture {
