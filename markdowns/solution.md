@@ -9,10 +9,8 @@ Dans ce modèle, on voit plusieurs choses :
 - Le decorateur est une classe abstraite qui hérite de Composant et qui a un attribut Composant
 - Chaque DecorateurConcret redéfinie les méthodes de Décorateur
 
-# Explication détaillé
-
 # Interets
-
+Lorsque le dévelopeur à vu une partie de l'application qui est sujette à beaucoup d'évolution, sa tache est grandement simplifier par ce design pattern.
 
 Définition de la solution
 
