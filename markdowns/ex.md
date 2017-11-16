@@ -79,7 +79,7 @@ class Regulateur extends DecorateurVoiture{
 
 Maintenant on implément le main pour utiliser notre décorateur
 ```java runnable
-//autofold
+\\autofold
 public abstract class Voiture {
 	String libelle;
 	int prix;
@@ -120,24 +120,24 @@ abstract abstract class DecorateurVoiture extends Voiture{
 }
 
 class ToitOuvrant extends DecorateurVoiture{
-	public ToitOuvrant(Voiture v) { voiture = v);
+	public ToitOuvrant(Voiture v) { voiture = v};
 	public String getLibelle() { return voiture+getLibelle() + " Toit Ouvrant "; }
 	public int getPrix() {return voiture.getPrix() + 2000;}
 	public int getPoids() {return voiture.getPoids() + 15;}	
 }
 class GPS extends DecorateurVoiture{
-	public GPS(Voiture v) { voiture = v);
+	public GPS(Voiture v) { voiture = v};
 	public String getLibelle() { return voiture+getLibelle() + " GPS "; }
 	public int getPrix() {return voiture.getPrix() + 1000;}
 	public int getPoids() {return voiture.getPoids() + 20;}	
 }
 class Regulateur extends DecorateurVoiture{
-	public Regulateur(Voiture v) { voiture = v);
+	public Regulateur(Voiture v) { voiture = v};
 	public String getLibelle() { return voiture+getLibelle() + " Regulateur "; }
 	public int getPrix() {return voiture.getPrix() + 200;}
 	public int getPoids() {return voiture.getPoids() + 1;}	
 }
-//autofold
+\\autofold
 public class Main
 {
      // Méthode principale.
