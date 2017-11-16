@@ -2,7 +2,7 @@
 
 Premièrement on crée la classe abstraite qui regroupe les méthodes et les attributs communs. Ce sont ces méthodes que l'on utilisera dans les autres classes
 
-```java runnable
+```java Runnable
 public abstract class Voiture {
 	String libelle;
 	int prix;
@@ -23,7 +23,7 @@ public abstract class Voiture {
 # Deuxieme étape 
 
 Maintenant on crée la classe Corsa et la classe C2 qui correspond aux classes Composant Concret. Elle héritent de la classe voiture. Dans le constructeur de ces classes on met à jour les attributs défini dans Voiture à l’aide des accesseurs
-```java runnable    
+```java Runnable    
 class Corsa extends Voiture{
     	public Corsa() {
     		setLibelle("Corsa"); 
@@ -43,7 +43,7 @@ class Corsa extends Voiture{
 # Troisième étape 
 
 A présent, on crée le Décorateur. Celui-ci possède une voiture en attribut et oblige la redéfinission de deux méthodes getLibelle() et getPrix().
-```java runnable
+```java Runnable
 abstract abstract class DecorateurVoiture extends Voiture{
 	protected Voiture voiture;
 	
@@ -55,7 +55,7 @@ abstract abstract class DecorateurVoiture extends Voiture{
 # Quatrième étape
 
  On crée une classe pour chaque option que l'on souhaite aujouter. Chaque Option (ToitOuvrant, GPS, Régulateur...) doit hériter de la classe VoitureAvecOption.
-```java runnable
+```java Runnable
 class ToitOuvrant extends DecorateurVoiture{
 	public ToitOuvrant(Voiture v) { voiture = v);
 	public String getLibelle() { return voiture+getLibelle() + " Toit Ouvrant "; }
@@ -121,19 +121,19 @@ abstract class DecorateurVoiture extends Voiture{
 
 class ToitOuvrant extends DecorateurVoiture{
 	public ToitOuvrant(Voiture v) { voiture = v;}
-	public String getLibelle() { return voiture.getLibelle() + " Toit Ouvrant "; }
+	public String getLibelle() { return voiture.getLibelle() + "+ Toit Ouvrant "; }
 	public int getPrix() {return voiture.getPrix() + 2000;}
 	public int getPoids() {return voiture.getPoids() + 15;}	
 }
 class GPS extends DecorateurVoiture{
 	public GPS(Voiture v) { voiture = v;}
-	public String getLibelle() { return voiture.getLibelle() + " GPS "; }
+	public String getLibelle() { return voiture.getLibelle() + "+ GPS "; }
 	public int getPrix() {return voiture.getPrix() + 1000;}
 	public int getPoids() {return voiture.getPoids() + 20;}	
 }
 class Regulateur extends DecorateurVoiture{
 	public Regulateur(Voiture v) { voiture = v;}
-	public String getLibelle() { return voiture.getLibelle() + " Regulateur "; }
+	public String getLibelle() { return voiture.getLibelle() + "+ Regulateur "; }
 	public int getPrix() {return voiture.getPrix() + 200;}
 	public int getPoids() {return voiture.getPoids() + 1;}	
 }
