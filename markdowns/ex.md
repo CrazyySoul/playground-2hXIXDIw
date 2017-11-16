@@ -80,7 +80,7 @@ class Regulateur extends DecorateurVoiture{
 Maintenant on implément le main pour utiliser notre décorateur
 ```java runnable
 
-public abstract class Voiture {
+abstract class Voiture {
 	String libelle;
 	int prix;
 	int poids;
