@@ -22,7 +22,7 @@ public abstract class Voiture {
 
 # Deuxieme étape 
 
-Maintenant on crée la classe Corsa et la classe C2 qui correspondent aux classes Composant Concret. Elles héritent de la classe voiture. Dans le constructeur de ces classes on définies leurs attributs à l’aide des mutateurs de leurs classe mère.
+Maintenant on crée la classe Corsa et la classe C2 qui correspondent aux classes Composant Concret. Elles héritent de la classe voiture. Dans le constructeur de ces classes on définit leurs attributs à l’aide des mutateurs de leurs classe mère.
 ```java Runnable    
 class Corsa extends Voiture{
     	public Corsa() {
@@ -57,7 +57,7 @@ abstract abstract class DecorateurVoiture extends Voiture{
  On crée une classe pour chaque option que l'on souhaite aujouter. Chaque Option (ToitOuvrant, GPS, Régulateur...) doit hériter de la classe DecorateurVoiture et redéfinir ses méthodes.
 ```java Runnable
 class ToitOuvrant extends DecorateurVoiture{
-	public ToitOuvrant(Voiture v) { voiture = v);
+	public ToitOuvrant(Voiture v) { voiture = v;}
 	public String getLibelle() { return voiture.getLibelle() + " Toit Ouvrant "; }
 	public int getPrix() {return voiture.getPrix() + 2000;}
 	public int getPoids() {return voiture.getPoids() + 15;}	
