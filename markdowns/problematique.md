@@ -10,6 +10,12 @@ On connait tous la manière classique d'ajouter des méthodes à un objet ou mod
 
 Mais on peut vite se retrouver avec un modele complexe avec beaucoup de classes.
 ![Classes](Classes.PNG)
+
+De plus on ne pourra pas ajouter de fonctionnalités de façon dynamique. En effet, une fois le programme compile on ne peut pas le modifier.
+
+
+Comment faire pour ajouter des fonctionnalités de façon dynamique à un de nos objets sans utiliser autant de classes ?
+
 Heritage 
          => façon classique pour ajout
          => methodes de classes mere sont appelé depuis nouvelle classe
