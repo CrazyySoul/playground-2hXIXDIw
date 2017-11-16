@@ -58,7 +58,7 @@ abstract abstract class DecorateurVoiture extends Voiture{
 ```java Runnable
 class ToitOuvrant extends DecorateurVoiture{
 	public ToitOuvrant(Voiture v) { voiture = v);
-	public String getLibelle() { return voiture+getLibelle() + " Toit Ouvrant "; }
+	public String getLibelle() { return voiture.getLibelle() + " Toit Ouvrant "; }
 	public int getPrix() {return voiture.getPrix() + 2000;}
 	public int getPoids() {return voiture.getPoids() + 15;}	
 }
@@ -98,14 +98,14 @@ abstract class Voiture {
   
 class Corsa extends Voiture{
     	public Corsa() {
-    		this.libelle = "Corsa"; 
+    		this.libelle = "Corsa "; 
 		this.prix = 5000;
 		this.poids = 1500;
     	}	
 }
     class C2 extends Voiture{
     	public C2() {
-    		this.libelle = "C2"; 
+    		this.libelle = "C2 "; 
 		this.prix = 4000;
 		this.poids = 1000;
     	}		
