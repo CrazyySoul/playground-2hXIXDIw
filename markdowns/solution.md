@@ -1,3 +1,10 @@
+# Une solution !
+
+# Explication détaillé
+
+# Interets
+
+
 Définition de la solution
 
 - plusieurs "composantConcret" peuvent hériter de Composant
