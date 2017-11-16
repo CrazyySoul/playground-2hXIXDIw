@@ -26,16 +26,16 @@ Maintenant on crée la classe Corsa et la classe C2 qui correspond aux classes C
 ```java runnable    
 class Corsa extends Voiture{
     	public Corsa() {
-    		this.libelle = "Corsa"; 
-		this.prix = 5000;
-		this.poids = 1500;
+    		setLibelle("Corsa"); 
+		setPrix(5000);
+		setPoids(1500);
     	}	
 }
     class C2 extends Voiture{
     	public C2() {
-    		this.libelle = "C2"; 
-		this.prix = 4000;
-		this.poids = 1000;
+    		setLibelle("C2"); 
+		setPrix(4000);
+		setPoids(1000);
     	}		
 }
 ```
