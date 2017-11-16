@@ -11,21 +11,3 @@ Dans ce modèle, on voit plusieurs choses :
 
 # Interets
 Lorsque le dévelopeur à vu une partie de l'application qui est sujette à beaucoup d'évolution, sa tache est grandement simplifier par ce design pattern.
-
-Définition de la solution
-
-- plusieurs "composantConcret" peuvent hériter de Composant
-- Etendre fonctionnalité = décorateur
-- decorateur = classe abstraite qui herite de Composant
-             = a pour attribut un Composant
-             = declare abstraite les methodes dont on veut étendre les fonctionnalités
-- ajouter des fonctionnalite à ComposantConcret -> créer DécorateurConcret hérite de Décorateur
-- DecorateurConcret redefinie les methodes de Décorateur
-
-
-Explication détaillée de la solution
-- ComposantConcret est emballe dans DecorateurConcret
- 
- 
-Conséquences
-- A utiliser lorsque l'application a besoin de beaucoup evoluer
