@@ -111,7 +111,7 @@ class Corsa extends Voiture{
     	}		
 }
 
-abstract abstract class DecorateurVoiture extends Voiture{
+abstract class DecorateurVoiture extends Voiture{
 	protected Voiture voiture;
 	
 	public abstract String getLibelle();
