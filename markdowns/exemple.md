@@ -1,6 +1,6 @@
 # Un exemple !
 
-Imaginons à présent un concessionnaire qui doit vend des voitures avec ou sans option.
+Imaginons à présent un concessionnaire qui doit vendre des voitures avec ou sans option.
 
 On pourrais imaginer l'uml suivant :
 ![NonOpti](NonOpti.PNG)
