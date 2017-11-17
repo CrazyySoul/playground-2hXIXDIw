@@ -64,13 +64,13 @@ class ToitOuvrant extends DecorateurVoiture{
 }
 class GPS extends DecorateurVoiture{
 	public GPS(Voiture v) { voiture = v);
-	public String getLibelle() { return voiture+getLibelle() + " GPS "; }
+	public String getLibelle() { return voiture.getLibelle() + " GPS "; }
 	public int getPrix() {return voiture.getPrix() + 1000;}
 	public int getPoids() {return voiture.getPoids() + 20;}	
 }
 class Regulateur extends DecorateurVoiture{
 	public Regulateur(Voiture v) { voiture = v);
-	public String getLibelle() { return voiture+getLibelle() + " Regulateur "; }
+	public String getLibelle() { return voiture.getLibelle() + " Regulateur "; }
 	public int getPrix() {return voiture.getPrix() + 200;}
 	public int getPoids() {return voiture.getPoids() + 1;}	
 }
